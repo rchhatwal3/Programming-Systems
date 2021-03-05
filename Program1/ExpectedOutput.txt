@@ -1,0 +1,148 @@
+protocol('SampleOutput.txt').
+consult('SD1.pro').
+
+parent(fred_smith, tom_smith).
+true .
+
+parent(tom_smith, fred_smith).
+false.
+
+parent(X, mark_smith).
+X = tom_smith ; 
+X = evelyn_harris ; 
+false. 
+
+parent(mark_smith, X).
+X = martha_smith ; 
+X = frederick_smith ; 
+
+sibling(jill_smith, marcus_smith).
+true . 
+
+sibling(jill_smith, freddy_smith).
+false. 
+
+sibling(jill_smith, X).
+X = marcus_smith ; 
+X = tim_smith ; 
+false. 
+
+father(freddy_smith, jill_smith).
+true . 
+
+father(jill_smith, freddy_smith).
+false. 
+
+father(fred_smith, X).
+X = tom_smith ; 
+X = lisa_smith ; 
+X = jane_smith ; 
+X = john_smith ; 
+false. 
+
+mother(connie_warrick, jill_smith).
+true . 
+
+mother(jill_smith, connie_warrick).
+false. 
+
+mother(mary_jones, X).
+X = tom_smith ; 
+X = lisa_smith ; 
+X = jane_smith ; 
+X = john_smith ; 
+false.
+
+married(freddy_smith, connie_warrick).
+true . 
+
+married(freddy_smith, jill_smith).
+false. 
+
+married(X, layla_morris).
+X = john_smith ; 
+false. 
+
+ancestor(tom_smith, jill_smith).
+true . 
+
+ancestor(jill_smith, tom_smith).
+false. 
+
+ancestor(X, martha_smith).
+X = mark_smith ; 
+X = pam_wilson ; 
+X = tom_smith ; 
+X = evelyn_harris ; 
+X = fred_smith ; 
+X = mary_jones ; 
+X = robert_harris ; 
+X = julia_smith ; 
+false. 
+
+common_ancestor(frederick_smith, tim_smith, fred_smith).
+true.
+
+common_ancestor(frederick_smith, tim_smith, X).
+X = tom_smith ; 
+X = evelyn_harris ; 
+X = fred_smith ; 
+X = mary_jones ; 
+X = robert_harris ; 
+X = julia_smith ; 
+false.
+
+descendent(jill_smith, fred_smith).
+true . 
+
+descendent(fred_smith, jill_smith).
+false. 
+
+descendent(X, jeremiah_leech).
+X = arthur_leech ; 
+X = timothy_leech ; 
+X = jack_leech ; 
+X = heather_leach ; 
+false. 
+
+blood(richard_thompson, edward_thompson).
+true . 
+
+uncle(freddy_smith, frederick_smith).
+true . 
+
+uncle(X, tim_smith).
+X = mark_smith ;
+X = joe_smith ;
+false. 
+
+aunt(pam_wilson, jill_smith).
+true . 
+
+aunt(X, tim_smith).
+X = pam_wilson ; 
+X = francis_smith ; 
+false. 
+
+cousin(jill_smith, martha_smith).
+true .
+
+cousin(jimmy_smith, martha_smith).
+false. 
+
+cousin_type(jill_smith, martha_smith, X, Y).
+X = 1,
+Y = 0 . 
+
+cousin_type(jill_smith, X, 2, 0).
+X = martha_smith ; 
+X = frederick_smith ; 
+X = jill_smith ; 
+X = lilly_thompson ; 
+X = richard_thompson ; 
+X = marcus_thompson ; 
+X = mary_louis ; 
+X = jane_louis ; 
+X = katie_louis ; 
+X = martha_smith ;
+false.  

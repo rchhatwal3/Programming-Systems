@@ -22,7 +22,7 @@ Fred Smith + Mary Jones
 		Julie Smith marries Blake Towns
 		Lelsie Smith
 		Heather Smith marries Joseph O'Leary
-		Zack Smith + Patty McDonna
+		Zach Smith + Patty McDonna
 
 Edward Thompson + Susan Holt
 	Leonard Thompson + Lisa Smith
@@ -31,7 +31,7 @@ Edward Thompson + Susan Holt
 			Richard Thompson
 			Marcus Thompson
 		Catherine Thompson marries Tom Louis
-		John Thompsom + Mary Snyder
+		John Thompson + Mary Snyder
 		Carrie Thompson marries George Frey
 	Mary Thompson marries Larry McBride
 

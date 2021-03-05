@@ -1,0 +1,242 @@
+[1mtrue.[0m
+
+consult('SDE1.pro').
+
+
+[1mtrue.[0m
+
+parent(fred_smith, tom_smith).
+
+
+[1mtrue [0m[1m.[0m
+
+parent(tom_smith, fred_smith).
+
+
+[1;31mfalse.[0m
+
+parent(X, mark_smith).
+
+
+X = tom_smith [1m.[0m
+
+;
+
+.
+
+
+[1;31mERROR: Unknown procedure: (;)/0
+ERROR:     However, there are definitions for:
+ERROR:         (;)/2
+[0m[1;31mfalse.[0m
+
+parent(X, mark_smith).
+
+
+X = tom_smith ;[1m;[0m
+X = evelyn_harris ;[1m;[0m
+[1;31mfalse.[0m
+
+parent(mark_smith, X).
+
+
+X = martha_smith ;[1m;[0m
+X = frederick_smith ;[1m;[0m
+[1;31mfalse.[0m
+
+sibling(jill_smith, marcus_smith).
+
+
+[1mtrue [0m[1m.[0m
+
+sibling(jill_smith, freddy_smith).
+
+
+[1;31mfalse.[0m
+
+sibling(jill_smith, X).
+
+
+X = marcus_smith ;[1m;[0m
+X = tim_smith ;[1m;[0m
+[1;31mfalse.[0m
+
+father(freddy_smith, jill_smith).
+
+
+[1mtrue [0m[1m.[0m
+
+father(jill_smith, freddy_smith).
+
+
+[1;31mfalse.[0m
+
+father(fred_smith, X).
+
+
+X = tom_smith ;[1m;[0m
+X = lisa_smith ;[1m;[0m
+X = jane_smith ;[1m;[0m
+X = john_smith ;[1m;[0m
+[1;31mfalse.[0m
+
+mother(connie_warrick, jill_smith).
+
+
+[1mtrue [0m[1m.[0m
+
+mother(jill_smith, connie_warrick).
+
+
+[1;31mfalse.[0m
+
+mother(mary_jones, X).
+
+
+X = tom_smith ;[1m;[0m
+X = lisa_smith ;[1m;[0m
+X = jane_smith ;[1m;[0m
+X = john_smith ;[1m;[0m
+[1;31mfalse.[0m
+
+married(freddy_smith, connie_warrick).
+
+
+[1mtrue [0m[1m.[0m
+
+married(freddy_smith, jill_smith).
+
+
+[1;31mfalse.[0m
+
+married(X, layla_morris).
+
+
+X = john_smith ;[1m;[0m
+[1;31mfalse.[0m
+
+ancestor(tom_smith, jill_smith).
+
+
+[1mtrue [0m[1m.[0m
+
+ancestor(jill_smith, tom_smith).
+
+
+[1;31mfalse.[0m
+
+ancestor(X, martha_smith).
+
+
+X = mark_smith ;[1m;[0m
+X = pam_wilson ;[1m;[0m
+X = tom_smith ;[1m;[0m
+X = evelyn_harris ;[1m;[0m
+X = fred_smith ;[1m;[0m
+X = mary_jones ;[1m;[0m
+X = robert_harris ;[1m;[0m
+X = julia_swift ;[1m;[0m
+[1;31mfalse.[0m
+
+common_ancestor(frederick_smith, tim_smith, fred_smith).
+
+
+[1mtrue [0m[1m.[0m
+
+common_ancestor(frederick_smith, tim_smith, X).
+
+
+X = tom_smith ;[1m;[0m
+X = evelyn_harris ;[1m;[0m
+X = fred_smith ;[1m;[0m
+X = mary_jones ;[1m;[0m
+X = robert_harris ;[1m;[0m
+X = julia_swift ;[1m;[0m
+[1;31mfalse.[0m
+
+descendent(jill_smith, fred_smith).
+
+
+[1mtrue [0m[1m.[0m
+
+descendent(fred_smith, jill_smith).
+
+
+[1;31mfalse.[0m
+
+descendent(X, jeremiah_leech).
+
+
+X = arthur_leech ;[1m;[0m
+X = timothy_leech ;[1m;[0m
+X = jack_leech ;[1m;[0m
+X = heather_leech ;[1m;[0m
+[1;31mfalse.[0m
+
+blood(richard_thompson, edward_thompson).
+
+
+[1mtrue [0m[1m.[0m
+
+uncle(freddy_smith, frederick_smith).
+
+
+[1mtrue [0m[1m.[0m
+
+uncle(X, tim_smith).
+
+
+X = joe_smith ;[1m;[0m
+X = mark_smith ;[1m;[0m
+[1;31mfalse.[0m
+
+aunt(pam_wilson, jill_smith).
+
+
+[1mtrue [0m[1m.[0m
+
+aunt(X, tim_smith).
+
+
+X = francis_smith ;[1m;[0m
+X = pam_wilson ;[1m;[0m
+[1;31mfalse.[0m
+
+cousin(jill_smith, martha_smith).
+
+
+[1mtrue [0m[1m.[0m
+
+cousin(jimmy_smith, martha_smith).
+
+
+[1;31mfalse.[0m
+
+cousin_type(jill_smith, martha_smith, X, Y).
+
+
+X = 1,
+Y = 0 [1m.[0m
+
+cousin_type(jill_smith, X, 2, 0).
+
+
+X = martha_smith ;[1m;[0m
+X = frederick_smith ;[1m;[0m
+X = martha_smith ;[1m;[0m
+X = frederick_smith ;[1m;[0m
+X = martha_smith ;[1m;[0m
+X = frederick_smith ;[1m;[0m
+X = jennifer_harris ;[1m;[0m
+X = karen_harris ;[1m;[0m
+X = kenneth_harris ;[1m;[0m
+X = martha_smith ;[1m;[0m
+X = frederick_smith ;[1m;[0m
+X = jennifer_harris ;[1m;[0m
+X = karen_harris ;[1m;[0m
+X = kenneth_harris ;[1m;[0m
+[1;31mfalse.[0m
+
+noprotocol.
+
+
